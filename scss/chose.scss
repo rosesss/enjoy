@@ -1,0 +1,165 @@
+@import 'main.scss';
+#wrap{
+    width:100%;
+    overflow-y:auto;
+    .header{
+            width:100%;
+            height:44px;
+            background:#000;
+            @include flexBox;
+            @include flex-direction('row');
+            overflow-x: hidden;
+            position: relative;
+            .home{
+                color:#fff;
+                display:block;
+                width:50px;
+                height:100%;
+                float:left;
+                margin-left:15px;
+                line-height: 44px;
+                @include flex(1);
+            }
+            .citykind{
+                @include flex(7);
+                @include flexBox;
+                @include flex-center;
+                @include flex-direction('row');
+                width:200px;
+                height:30px;
+                line-height: 44px;
+                margin-top:7px;
+                color:#fff;
+                img{
+                    float:left;
+                    width:60px;
+                    height:100%;
+                }
+                span{
+                    display:block;
+                    float:left;
+                    font-size:10px;
+                    position: relative;
+                    margin-top:10px;
+                    .iconfont{
+                        color:#fff;
+                        position:absolute;
+                        left:13px;
+                        top:2px;
+                    }
+                }
+            }
+            .login{
+                @include flex(1);
+                float:left;
+                color:#fff;
+                line-height: 44px;
+            }
+            .search{
+                width:20px;
+                height:20px;
+                @include flex(1);
+                float:left;
+                color:#fff;
+                line-height: 44px;
+                font-size:16px;
+                margin-left:40px;
+                font-weight: 900;
+            }
+            #top{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right:20px;
+                top:27px;
+                color: #fff;
+                display: none;
+            }
+        }
+    #con{
+        width:100%;
+        .mainheader{
+            width:100%;
+            height:50px;
+            border-bottom:0.5px solid #ccc;
+            div{
+                float:left;
+                width:49%;
+                height:100%;
+                text-align: center;
+                line-height: 50px;
+            }
+           .active{
+               color:#343434;
+               border-bottom:3px solid #343434;
+           }
+        }
+        .search{
+            width:100%;
+            height:30px;
+            text-align: center;
+            line-height: 30px;
+            font-size:14px;
+            color:#666;
+            margin:10px auto;
+        }
+        ul{
+            width:90%;
+            margin:10px auto;
+            li{
+                width:100%;
+                margin:20px 0;
+                border-bottom:0.5px solid #ccc;
+                .left{
+                    width:55%;
+                    height:90%;
+                    float:left;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .right{
+                    width:40%;
+                    height:100%;
+                    float:left;
+                    margin-left:10px;
+                    .title{
+                        width:100%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin:20px auto;
+                    }
+                    .price{
+                        .new{
+                            color:#f00;
+                            font-size:16px;
+                        }
+                        .old{
+                            color:#666;
+                            font-size:14px;
+                            margin-left:10px;
+                        }
+                    }
+                }
+            }
+           
+        }
+         .prolist{
+                li{
+                    width:100%;
+                    height:140px;
+                }
+            }
+            .country{
+                li{
+                    width:100%;
+                    height:140px;
+                }
+            }
+        .country{
+            display:none;
+        }
+    }
+}

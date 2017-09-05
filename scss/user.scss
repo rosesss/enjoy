@@ -1,0 +1,78 @@
+@import 'main.scss';
+.wraps{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    #content{
+        width:100%;
+        height:100%;
+        background:#F6F6F6;
+        .my{
+            width:100%;
+            height:200px;
+            background:url('../img/bg.png') no-repeat 0 0;
+            background-size:100%;
+            overflow: hidden;
+            .main{
+                width:100px;
+                height:100px;
+                margin-left:35%;
+                margin-top:10%;
+               
+                img{
+                    display:block;
+                     border-radius:50%;
+                    width:100%;
+                    height:100%;
+                }
+            }
+            h4{
+                color:#fff;
+                margin-left:42%;
+                margin-top:10px;
+          
+            }
+            
+        }
+
+        .code{
+            width:100%;
+            height:60px;
+            background:#fff;
+            margin:10px 0;
+            border-top:0.5px solid #ccc;
+            border-bottom:0.5px solid #ccc;
+            h4{
+                line-height: 60px;
+                margin-left:20px;
+                float:left;
+            }
+            .iconfont{
+                float:right;
+                margin-right:20px;
+                line-height: 60px;
+            }
+        }
+        .myinfor{
+            width:100%;
+            height:122px;
+            background:#fff;
+            
+            p{
+                width:90%;
+                height:60px;
+                line-height: 60px;
+                margin:0 auto;
+                border-top:0.5px solid #ccc;
+                .iconfont{
+                    float:right;
+                    margin-right:5px;
+                }
+            }
+
+            p:nth-of-type(2){
+                border-bottom:0.5px solid #ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+@import 'main.scss';
+.con{
+    width:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    .toast{
+        width:200px;
+        height: 40px;
+        position: fixed;
+        left:100px;
+        bottom:100px;
+        background: rgba( 0,0,0,0.7);
+        border-radius:10px;
+        display: none;
+        color:#fff;
+        text-align: center;
+        line-height: 40px;
+    }
+     .kong{
+            width:100%;
+            height:200px;
+            margin:50px 130px;
+            display:none;
+            img{
+                width:150px;
+                height:180px;
+            }
+            p{
+                color:#666;
+                font-size:18px;
+            }
+        }
+    .mycart{
+        width:100%;
+        .mygoods{
+            width:90%;
+            height:100px;
+            margin:10px auto;
+            div{
+                float:left;
+            }
+             .left{
+                    width:130px;
+                    height:100%;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .right{
+                    width:170px;
+                    height:100%;
+                    margin-left:15px;
+                    .pecname{
+                        width:100%;
+                        font-size:14px;
+                        color:#666;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .price{
+                        margin:10px 0;
+                        color:#f00;
+                        font-size:14px;
+                    }
+                    .adorre{
+                        width:140px;
+                        float:left;
+                        button{
+                            width:30px;
+                            height:30px;
+                            background: #fff;
+                            border:0.5px solid #ccc;
+                            float:left;
+                        }
+                        span{
+                            float:left;
+                            display: block;
+                            width:35px;
+                            height:30px;
+                            text-align: center;
+                            line-height: 30px;
+                        }
+                    }
+                    .iconfont{
+                        float:right;
+                    }
+                }
+        }
+    }
+    .different{
+        width:90%;
+        margin:20px auto;
+        padding-bottom:30px;
+        h3{
+            text-align: center;
+            margin-bottom:20px;
+            font-size:18px;
+            font-weight: 300;
+            color:#343434;
+        }
+        .maincon{
+            width:100%;
+            ul{
+                width:100%;
+                li{
+                    width:46%;
+                    height:150px;
+                    float:left;
+                    margin:5px;
+                    img{
+                        width:100%;
+                        height:80px;
+                    }
+                    p{
+                        width:100%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size:14px;
+                        color:#343434;
+                        margin:10px 0;
+                    }
+                    .price{
+                        span:nth-of-type(1){
+                            color:#f00;
+                            margin-right:10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cartfooter{
+            width:100%;
+            height:60px;
+            border-top:0.5px solid #ccc;
+            background:#fff;
+            position: fixed;
+            left:0;
+            bottom:0;
+            #money{
+                width:130px;
+                height:100%;
+                line-height: 60px;
+                float:left;
+                text-align: center;
+            }
+            .topay{
+                float:right;
+                width:150px;
+                height:100%;
+                line-height: 60px;
+                color:#fff;
+                background:#f00;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+}
